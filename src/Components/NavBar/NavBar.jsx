@@ -40,11 +40,16 @@ export default function NavBar() {
         <Header state={controlState}>
           <Banner
             state={controlState}
-            src="/landingpage2.png"
+            src={process.env.PUBLIC_URL + "/landingpage2.png"}
             alt="the handing img"
           />
           <Logo state={controlState}>
-            <PersonalImg state={controlState} src="/Me.jpg" alt="" /> Kota.
+            <PersonalImg
+              state={controlState}
+              src={process.env.PUBLIC_URL + "/Me.jpg"}
+              alt=""
+            />{" "}
+            Kota.
           </Logo>
           <Nav>
             <Ul state={controlState}>
