@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="nameCard.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:connector-spacing="11"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:zoom="0.76791526"
+     inkscape:cx="396.52813"
+     inkscape:cy="561.91096"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="-204.44964"
+       y="648.50905"
+       width="205.75187"
+       height="294.3033"
+       id="rect19705" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       id="rect16625"
+       width="368.47232"
+       height="179.16473"
+       x="-324.71478"
+       y="-262.20071"
+       style="stroke-width:0.803493"
+       transform="scale(-1)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.47532408,0,0,0.51035181,59.746298,-5.0074212)"
+       id="text19703"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect19705);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.3321px;line-height:1.25;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.508304"
+       x="5.1521087"
+       y="161.54533"
+       id="text340"
+       transform="scale(0.99598747,1.0040287)"><tspan
+         sodipodi:role="line"
+         id="tspan338"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.3321px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.508304"
+         x="5.1521087"
+         y="161.54533">kotasaikrishna@<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.3321px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.508304"
+   id="tspan13721">kotakreddy</tspan>.com</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.706496,167.79466 c 123.692574,46.51392 91.305104,62.36311 123.692574,46.51392 32.38747,-15.84919 56.16125,23.77378 32.38747,-15.84919 -23.77378,-39.62297 -21.0174,-31.00928 -21.0174,-31.00928 l -50.30394,29.97564"
+       id="path37416" />
+  </g>
+</svg>

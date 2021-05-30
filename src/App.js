@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Routes/Home";
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      {/* <Eyes /> */}
     </div>
   );
 }

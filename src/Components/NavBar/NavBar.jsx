@@ -12,7 +12,8 @@ import {
   PersonalImg,
   A,
 } from "./NavBarStyles";
-import "./NavBar.module.css";
+// import Background from "public\background.jpg";
+// import "./NavBar.module.css";
 
 // const sticky = {
 //   height: "80px",
@@ -28,6 +29,8 @@ export default function NavBar() {
     }
   };
 
+  const IMAGE = `${process.env.PUBLIC_URL}/background.jpg`;
+
   React.useEffect(() => {
     window.addEventListener("scroll", controlHeader);
     return () => {
@@ -38,11 +41,7 @@ export default function NavBar() {
     <Main>
       <Body>
         <Header state={controlState}>
-          <Banner
-            state={controlState}
-            src={process.env.PUBLIC_URL + "/landingpage2.png"}
-            alt="the handing img"
-          />
+          <Banner state={controlState} src={IMAGE} alt="the handing img" />
           <Logo state={controlState}>
             <PersonalImg
               state={controlState}

@@ -1,0 +1,25 @@
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: "Apercu";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background: #000;
+  //   width: 33vh;
+}
+
+.Text {
+  font-size: 8px;
+  line-height: 5px;
+  background-size: contain;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  //   background: url("test1.JPG");
+}

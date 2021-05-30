@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 // const Scroll = window.scrollY > 0 ? "80px" : "100vh";
 
+export const colorType = "#007a8b";
+
 export const Header = styled.header`
   position: fixed;
   top: 0;
@@ -13,22 +15,23 @@ export const Header = styled.header`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  transition: 1s;
-  padding: 0 100px;
-  height: ${(prop) => (prop.state ? "80px" : "100vh")};
+  transition: 0.9s;
+  padding: 0 3%;
+  font-family: "Apercu", "Times New Roman", Times, serif;
+  height: ${(prop) => (prop.state ? "60px" : "100vh")};
 `;
 //   ${(({ scroll }) => !scroll && `height: 100vh`) || `height:80px`};
 
 export const Body = styled.section`
-  min-height: 1000px;
+  min-height: 500px;
 `;
 
 export const Main = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 100px;
+  /* font-family: "Poppins", sans-serif; */
+  padding-bottom: 20px;
 `;
 
 export const A = styled.a`
@@ -63,12 +66,12 @@ export const Logo = styled.a`
     props.state ? "translate(0, -50%)" : "translate(-50%, -50%)"};
   font-size: ${(props) => (props.state ? "2em" : "13vw")};
   color: #fff;
-  font-style: 700;
+  font-weight: 700;
   transition: 1s;
   text-decoration: none;
   z-index: 1;
   @media (max-width: 991px) {
-    left: ${(props) => (props.state ? "40px" : "55%")};
+    left: ${(props) => (props.state ? "40px" : "25%")};
   }
 `;
 
@@ -81,8 +84,8 @@ export const Nav = styled.nav`
 export const PersonalImg = styled(Banner)`
   width: 1em;
   height: 1em;
-  top: 20%;
-  left: -40%;
+  top: 10%;
+  left: -45%;
   border-radius: 50%;
   transition: 1s;
   transform: ${(props) =>
