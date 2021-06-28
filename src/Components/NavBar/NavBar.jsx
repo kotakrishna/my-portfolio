@@ -6,11 +6,12 @@ import {
   Body,
   Banner,
   Ul,
-  Li,
+  // Li,
   Logo,
   Nav,
   PersonalImg,
-  A,
+  LogoText,
+  // A,
 } from "./NavBarStyles";
 // import Background from "public\background.jpg";
 // import "./NavBar.module.css";
@@ -47,19 +48,21 @@ export default function NavBar() {
               state={controlState}
               src={process.env.PUBLIC_URL + "/Me.jpg"}
               alt=""
-            />{" "}
+            />
+            {/* <LogoText> */}
             Kota.
+            {/* </LogoText> */}
           </Logo>
-          <Nav>
-            <Ul state={controlState}>
-              <Li>
+          {/* <Nav>
+            <Ul state={controlState}> */}
+          {/* <Li>
                 <A>Home</A>
               </Li>
               <Li>
                 <A>About</A>
-              </Li>
-            </Ul>
-          </Nav>
+              </Li> */}
+          {/* </Ul> */}
+          {/* </Nav> */}
         </Header>
       </Body>
     </Main>

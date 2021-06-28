@@ -2,9 +2,10 @@ import React from "react";
 import styles from "../styles/Home.module.scss";
 import BackGround from "./BackGround";
 // import TextImage from "../Components/TextImage/TextImage";
-import nameCard from "../img/personal/GitnMail.svg";
+// import nameCard from "../img/personal/GitnMail.svg";
 import Skills from "./Skills";
 import SmallSkills from "./SmallSkills";
+// import Projects from "./Projects";
 export default function Home() {
   return (
     <>
@@ -40,7 +41,8 @@ export default function Home() {
       <BackGround />
       <Skills />
       <SmallSkills />
-      <div
+      {/* <Projects />/ */}
+      {/* <div
         style={{
           width: "500px",
           display: "grid",
@@ -49,7 +51,7 @@ export default function Home() {
         }}
       >
         <img width="320px" src={nameCard} alt="the name card" />
-      </div>
+      </div> */}
       {/* <TextImage /> */}
     </>
   );

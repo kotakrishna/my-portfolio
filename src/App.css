@@ -4,3 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.holder {
+  background: #ccc;
+  padding: 0.5rem;
+  overflow: hidden;
+  /* z-index: 10; */
+}
+.news {
+  animation: slide 10s linear infinite;
+  /* z-index: -10; */
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(0%);
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}

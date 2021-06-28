@@ -1,25 +1,31 @@
-.section {
+.Section {
   display: flex;
   justify-content: center;
-  padding: 100px;
   visibility: visible;
+  padding: 100px 170px;
   opacity: 1;
   //   transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;
   transition-property: opacity;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
   transition-delay: 0s;
+  flex-direction: row;
   @media (max-width: 800px) {
+    padding: 10px;
+    margin: auto;
     flex-direction: column;
-    padding: 2.5rem;
     * {
       margin-top: 20px;
     }
-    .title {
-      text-align: center;
-      padding-left: 2rem;
-    }
   }
+  span {
+    font-weight: 700;
+  }
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url(../font/apercu/Apercu-Bold.eot) format("opentype");
 }
 
 .title {
@@ -31,41 +37,29 @@
   text-transform: uppercase;
   text-align: right;
   //   src: url("../font/apercu/Apercu-Bold.eot");
-  font-weight: 700;
+
+  font-weight: 800;
   font-family: "Apercu";
   letter-spacing: 2px;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2em;
   //   font-weight: 600;
   //   font-size: 1.3rem;
   width: 100%;
   max-width: 650px;
   * {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     // font-weight: 400;
-    font-size: 0.9rem;
+    // font-size: 1.1rem;
   }
-  .subTitle {
-    font-size: 1.2em;
-    font-weight: 600;
+  .project {
+    display: grid;
+    grid-template-columns: 60% 30%;
   }
   @media (max-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-    * {
-      margin: auto;
-      margin-top: 20px;
-      //   margin-bottom: 5px;
-      // font-weight: 400;
-      font-size: 0.9rem;
-    }
-    .subTitle {
-      font-size: 1.2em;
-      font-weight: 600;
-    }
+    width: 40vh;
+    // margin: auto;
   }
 }

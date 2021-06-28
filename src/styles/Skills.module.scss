@@ -8,8 +8,24 @@
     height: 100px;
     margin: 10px 50px;
   }
+  // display: none;
+  @media only screen and (min-width: 321px) {
+    // .poweredBy {
+    display: none;
+    // }
+  }
 }
-
+.holder {
+  background: #ffffff;
+  padding: 0.5rem;
+  overflow: hidden;
+  // background-color: #0e2f56;
+}
+.news {
+  animation: slide 10s linear infinite;
+  background-color: #ffffff;
+  width: max-content;
+}
 .STC {
   background-color: rgb(201, 201, 201);
 }
@@ -22,4 +38,14 @@
   //   width: 40px;s
   text-align: center;
   margin: auto;
+}
+
+@keyframes slide {
+  100% {
+    transform: translatex(-10%);
+  }
+
+  0% {
+    transform: translatex(10%);
+  }
 }

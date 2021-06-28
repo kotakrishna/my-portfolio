@@ -10,10 +10,14 @@
   transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
   transition-delay: 0s;
   flex-direction: row;
+  // font-size: 3rem;
   @media (max-width: 800px) {
     padding: 10px;
     margin: auto;
     flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
     * {
       margin-top: 20px;
     }

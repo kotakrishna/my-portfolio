@@ -22,8 +22,8 @@ export default function BackGround() {
         </p>
         <p>
           <span> When I'm not in front of a computer screen </span>, I'm
-          probably cycling, cruising around on my chess board, or crossing off
-          another item on my bucket list.
+          probably cycling, battling on chess.com, or crossing off another item
+          on my bucket list.
         </p>
       </div>
     </section>

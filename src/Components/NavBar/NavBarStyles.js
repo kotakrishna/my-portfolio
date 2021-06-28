@@ -18,6 +18,7 @@ export const Header = styled.header`
   transition: 0.9s;
   padding: 0 3%;
   font-family: "Apercu", "Times New Roman", Times, serif;
+  z-index: 100;
   height: ${(prop) => (prop.state ? "60px" : "100vh")};
 `;
 //   ${(({ scroll }) => !scroll && `height: 100vh`) || `height:80px`};

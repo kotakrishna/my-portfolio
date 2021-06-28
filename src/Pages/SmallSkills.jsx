@@ -3,7 +3,9 @@ import styles from "../styles/SmallSkills.module.scss";
 export default function SmallSkills() {
   return (
     <section className={styles.section}>
-      <div className={styles.title}>SKILLS</div>
+      <div className={styles.title} style={{ fontWeight: "800" }}>
+        SKILLS
+      </div>
       <div className={styles.content}>
         <div className={styles.sub}>
           <p className={styles.subTitle}>LANGUAGES</p>
