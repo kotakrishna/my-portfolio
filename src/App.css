@@ -3,7 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-snap-type: y proximity;
 }
+body, html { overflow-x:hidden;
+  /* overflow-y:; Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */ }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+  }
 
 .holder {
   background: #ccc;

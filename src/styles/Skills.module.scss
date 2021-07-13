@@ -5,15 +5,16 @@
   .marquee {
   }
   img {
-    height: 100px;
+    height: 90px;
     margin: 10px 50px;
   }
+
   // display: none;
-  @media only screen and (min-width: 321px) {
-    // .poweredBy {
-    display: none;
-    // }
-  }
+    @media only screen and (max-width: 521px) {
+      // .poweredBy {
+      display: none;
+      // }
+    }
 }
 .holder {
   background: #ffffff;
@@ -22,7 +23,7 @@
   // background-color: #0e2f56;
 }
 .news {
-  animation: slide 10s linear infinite;
+  animation: slide 15s linear infinite;
   background-color: #ffffff;
   width: max-content;
 }
@@ -41,11 +42,58 @@
 }
 
 @keyframes slide {
-  100% {
-    transform: translatex(-10%);
-  }
-
-  0% {
-    transform: translatex(10%);
-  }
+    100% {
+        transform: translatex(-40%);
+      }
+    
+      0% {
+          transform: translatex(10%);
+        }
+      }
+      
+      
+      
+      
+      
+      .Section{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin: auto;
+        align-items: center;
+        place-content: center;
+        row-gap: 2rem;
+        @media only screen and (max-width: 521px) {
+          // .poweredBy {
+          display: none;
+          // }
+        }
+        div{
+          align-items: center;
+          // width: 100%;
+          place-items: center;
+          margin: auto;
+          display: flex;
+          img{
+            height: 4em;
+            margin: 0px 50px; 
+          }
+        }
+        div:nth-child(3){     
+          img{
+            height: 6em;
+            margin: 10px 50px;
+          }
+        }
+        .STC {
+          background-color: rgb(201, 201, 201);
+        }
+        .skills {
+          font-family: "Apercu";
+          font-size: 2em;
+          color: #0e2f56;
+          font-weight: 1000;
+          //   width: 40px;s
+          text-align: center;
+          margin: auto;
+        }
 }

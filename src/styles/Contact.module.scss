@@ -1,0 +1,60 @@
+.Section {
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+    padding: 100px 170px;
+    opacity: 1;
+    margin-top: 0%;
+    //   transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
+    transition-delay: 0s;
+    padding-bottom:50px ;
+    flex-direction: row;
+    // font-size: 3rem;
+    @media (max-width: 800px) {
+      padding: 10px;
+      margin: auto;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+  
+      * {
+        margin-top: 20px;
+      }
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  
+.title {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: #18356d;
+    text-transform: uppercase;
+    text-align: right;
+    //   src: url("../font/apercu/Apercu-Bold.eot");
+    // font-size: 120%;
+    font-weight: 800;
+    font-family: "Apercu";
+    letter-spacing: 2px;
+  }
+
+.content{
+    display: flex;
+    div{
+        margin: auto;
+    }
+    img{
+        color: #18356d;
+        width: 10em;
+        @media (max-width: 800px) {
+            width: auto;
+        }
+    }
+}

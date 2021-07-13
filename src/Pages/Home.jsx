@@ -5,11 +5,12 @@ import BackGround from "./BackGround";
 // import nameCard from "../img/personal/GitnMail.svg";
 import Skills from "./Skills";
 import SmallSkills from "./SmallSkills";
-// import Projects from "./Projects";
+import Projects from "./Projects";
+import Contact from "./Contact"
 export default function Home() {
   return (
     <>
-      <section className={styles.Section}>
+      <section className={styles.scroll_snap,styles.Section}>
         <div>
           <h1 className={styles.hey}>
             Hey! <span className={styles.wavingHand}></span>
@@ -37,11 +38,15 @@ export default function Home() {
             </a>
           </h3>
         </div>
+        <div className={styles.ResumeDownload}>
+            <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
+        </div>
       </section>
       <BackGround />
       <Skills />
       <SmallSkills />
-      {/* <Projects />/ */}
+      <Projects />
+      <Contact />
       {/* <div
         style={{
           width: "500px",

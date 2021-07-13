@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ReactTypingEffect from 'react-typing-effect';
 // import React from "react";
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
 
@@ -46,6 +47,9 @@ export const A = styled.a`
   }
 `;
 
+export const PersonalImageHolder = styled.div`
+    padding-right: 10px;
+`
 export const Banner = styled.img`
   position: absolute;
   top: 0;
@@ -59,20 +63,44 @@ export const Banner = styled.img`
     opacity: ${(props) => (props.state ? "0" : "1")};
   }
 `;
-export const Logo = styled.a`
-  position: absolute;
-  top: 50%;
-  left: ${(props) => (props.state ? "100px" : "55%")};
+export const Logo = styled.div`
+  
+  display:grid;
+  grid-template-rows: 2.5em  10vh auto;
+  place-items: center; 
+  
+  padding-left:${(props)=>(props.state?"20vh":"3em")};
+  
   transform: ${(props) =>
-    props.state ? "translate(0, -50%)" : "translate(-50%, -50%)"};
+    props.state ? "translate(-70%, -30%)" : "translate(-50%, -50%)"};
   font-size: ${(props) => (props.state ? "2em" : "13vw")};
   color: #fff;
   font-weight: 700;
   transition: 1s;
   text-decoration: none;
+  .textTop{
+    /* display: none; */
+    /* visibility: hidden; */
+  }
   z-index: 1;
-  @media (max-width: 991px) {
-    left: ${(props) => (props.state ? "40px" : "25%")};
+  @media (min-width: 891px) {
+    padding-left:${(props)=>(props.state?"10em":"5em")};
+    font-size: ${(props) => (props.state ? "2em" : "7vw")};
+    left: ${(props) => (props.state ? "10%" : "25%")};
+    /* p{
+      display: none;
+      opacity: ${(props)=>(props.state?0:1)};
+      visibility: hidden;
+      top:100px
+    }
+    span{ 
+      display: none;
+      opacity: ${(props)=>(props.state?0:1)};
+      visibility: hidden;
+      top:100px
+    } */
+  transform: ${(props) =>
+    props.state ? "translate(-50%, -30%)" : "translate(-80%, -20vh)"};
   }
 `;
 
@@ -82,11 +110,16 @@ export const Nav = styled.nav`
   z-index: 1;
 `;
 
-export const PersonalImg = styled(Banner)`
-  width: 1em;
-  height: 1em;
-  top: 10%;
-  left: -45%;
+
+export const PersonalImg = styled.img`
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* justify-content: center; */
+  transition: 1s;
+  opacity: ${(props) => (props.state ? "0.5" : "1")};
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   transition: 1s;
   transform: ${(props) =>
@@ -102,13 +135,17 @@ export const Ul = styled.ul`
   transition-delay: 0.75s;
   transform: ${(prop) => (prop.state ? "translateX(0)" : "translateX(50px)")};
   opacity: ${(prop) => (prop.state ? "1" : "0")};
-  @media (min-width: 991px) {
+  /* @media (min-width: 991px) {
     display: ${(prop) => (prop.state ? "none" : "flex")};
     opacity: 0;
     visibility: ${(prop) => (prop.state ? "hidden" : "hidden")};
-  }
+  } */
 `;
 
 export const Li = styled.li`
   list-style: none;
 `;
+
+// export const TextTop = styled.ReactTypingEffect`
+//   display: none;
+// `

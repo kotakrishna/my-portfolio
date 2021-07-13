@@ -20,8 +20,33 @@ import SQL from "../img/skills/icons8-mysql-logo-1.svg";
 import styles from "../styles/Skills.module.scss";
 
 export default function Skills() {
-  return (
-    <section className={styles.section}>
+  let p=Math.round(Math.random())
+  return p%2?(
+    <section id="skills" className={styles.Section}>
+         <h5 className={styles.skills}>SKILLS</h5>
+       <div>
+              <img src={HTML} alt="HTML" />
+              <img src={Css} alt="HTML" />
+              <img src={JS} alt="HTML" />
+              <img src={Ty} alt="HTML" />
+              <img src={PY} alt="HTML" />
+       </div>
+       <div>
+              <img src={Rct} alt="HTML" />
+              <img src={REDUX} alt="" />
+              <img src={Njs} alt="HTML" />
+              <img src={EX} alt="" />
+              <img src={MDB} alt="" />
+       </div>
+       <div>
+       <img src={SCSS} alt="" />
+    <img className={styles.STC} src={STC} alt="" />
+           <img src={MUI} alt="" />
+           <img src={SQL} alt="" />
+           <img src={NPM} alt="" />
+       </div>
+    </section>):(
+    <section id="skills" className={styles.section}>
       <h5 className={styles.skills}>SKILLS</h5>
       <div className={styles.holder}>
         <div className={styles.news}>
@@ -48,5 +73,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  );
+    )
 }

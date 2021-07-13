@@ -1,5 +1,10 @@
 import React from "react";
+import ProgressiveImage from "react-progressive-image";
+import ReactTypingEffect from 'react-typing-effect';
 // import styled from "styled-components";
+
+// import {Sign} from "./Sign"
+// import  {ReactComponent as Sign} from "../../img/logo/signOfDeveloper.svg"
 import {
   Main,
   Header,
@@ -10,7 +15,9 @@ import {
   Logo,
   Nav,
   PersonalImg,
+  PersonalImageHolder,
   LogoText,
+  TextTop,
   // A,
 } from "./NavBarStyles";
 // import Background from "public\background.jpg";
@@ -42,27 +49,28 @@ export default function NavBar() {
     <Main>
       <Body>
         <Header state={controlState}>
+        <ProgressiveImage
+            delay={3000}
+            src={IMAGE}
+            placeholder="tiny-image.jpg"
+          >
+            {src => <Banner state={controlState} src={src} alt="the handing img" />}
+          </ProgressiveImage>
           <Banner state={controlState} src={IMAGE} alt="the handing img" />
           <Logo state={controlState}>
-            <PersonalImg
+           <PersonalImageHolder >
+              <PersonalImg
               state={controlState}
               src={process.env.PUBLIC_URL + "/Me.jpg"}
               alt=""
-            />
-            {/* <LogoText> */}
-            Kota.
-            {/* </LogoText> */}
+              />
+              </PersonalImageHolder>
+            <h3>
+              Kota.
+              </h3> 
+          
           </Logo>
-          {/* <Nav>
-            <Ul state={controlState}> */}
-          {/* <Li>
-                <A>Home</A>
-              </Li>
-              <Li>
-                <A>About</A>
-              </Li> */}
-          {/* </Ul> */}
-          {/* </Nav> */}
+
         </Header>
       </Body>
     </Main>
