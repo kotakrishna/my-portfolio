@@ -2,8 +2,6 @@
   height: 40vh;
   //   border: 1px solid black;
   margin: auto;
-  .marquee {
-  }
   img {
     height: 90px;
     margin: 10px 50px;
@@ -73,12 +71,17 @@
           place-items: center;
           margin: auto;
           display: flex;
+          span{
+            color: rgb(150, 150, 150);
+            // display: none;
+            // visibility: hidden;
+          }
           img{
             height: 4em;
             margin: 0px 50px; 
           }
         }
-        div:nth-child(3){     
+        .middle{     
           img{
             height: 6em;
             margin: 10px 50px;

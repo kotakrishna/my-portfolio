@@ -15,6 +15,7 @@
     padding: 10px;
     margin: auto;
     flex-direction: column;
+    align-items: center;
     * {
       margin-top: 20px;
     }
@@ -27,9 +28,6 @@
       grid-template-rows: 300px auto;
       flex-direction: column;
       row-gap: 10%;
-    }
-    img{
-
     }
   }
   span {
@@ -52,7 +50,6 @@
   text-transform: uppercase;
   text-align: right;
   //   src: url("../font/apercu/Apercu-Bold.eot");
-
   font-weight: 800;
   letter-spacing: 2px;
 }
@@ -62,12 +59,6 @@
   //   font-size: 1.3rem;
   width: 100%;
   max-width: 650px;
-  // * {
-  //   margin-top: 0;
-  //   margin-bottom: 25px;
-  //   // font-weight: 400;
-  //   // font-size: 1.1rem;
-  // }
   .project {
     display: grid;
     grid-template-columns: auto auto;
@@ -75,6 +66,7 @@
     margin-bottom: 5%;
     padding-bottom: 10%;
     // margin-top: 5%;
+    width: 100%;
     .ImageHolder{
       width: 100%;
       margin: auto;
@@ -85,7 +77,6 @@
       margin: auto;
       
       .projectTitle{
-        margin: auto;
       }
       .projectDetails{
         width: 100%;
@@ -104,15 +95,17 @@
         max-width: 100%;
         padding: 2vh;
         height: auto;
-        margin-left: 5%;
+        margin-right: 10px;
       }
     }
     .projectDetails{
       width: 40vh;
-
+      
       .projectTitle{
         font-size: 24px;
         font-weight: 700;
+        margin: auto;
+        margin-bottom:-5px ;
         // padding-bottom: 30px;
       }
       .projectContent{
@@ -162,7 +155,29 @@
 }
 
 
-
+.techStack{
+  // width: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  .stackTitle{
+    font-size: 14px;
+    border-radius: none;
+    border: none;
+    font-weight: 600;
+  }
+  span{
+    
+    color:rgb(44, 44, 44);
+    font-weight: 400;
+    border-radius: 10px;
+    border: 0.5px solid rgb(44, 44, 44);
+    padding: 2%;
+    min-width: 20px;
+    font-size: 12px;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+}
 /*
 .Section {
   display: flex;
