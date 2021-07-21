@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
 import BackGround from "./BackGround";
+import { Element } from "react-scroll";
 // import TextImage from "../Components/TextImage/TextImage";
 // import nameCard from "../img/personal/GitnMail.svg";
 import Skills from "./Skills";
@@ -10,7 +11,9 @@ import Contact from "./Contact"
 export default function Home() {
   return (
     <>
-      <section className={styles.scroll_snap,styles.Section}>
+    
+    <section id="home" className={styles.scroll_snap,styles.Section}>
+        
         <div>
           <h1 className={styles.hey}>
             Hey! <span className={styles.wavingHand}></span>
@@ -58,6 +61,6 @@ export default function Home() {
         <img width="320px" src={nameCard} alt="the name card" />
       </div> */}
       {/* <TextImage /> */}
-    </>
+      </>
   );
 }

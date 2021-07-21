@@ -2,10 +2,12 @@ import React from "react";
 import styles from "../styles/Projects.module.scss";
 import MUI from "../img/skills/icons8-material-ui.svg";
 import LinkedIn from "../img/Projects/LinkedIn-learning.gif"
+import { Element } from "react-scroll";
 import Uboric from "../img/Projects/Uboric.gif"
 import TimeCamp from "../img/Projects/TimeCampClone.gif"
 export default function Projects() {
   return (
+    <Element name="projects">
     <section className={styles.Section}>
       <div className={styles.title}>Featured Projects</div>
       <div className={styles.content}>
@@ -15,7 +17,7 @@ export default function Projects() {
           </div>
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>LinkedIn - Learning Clone</p>
-            <br />
+            {/* <br /> */}
             <span className={styles.projectContent}>Edu - Tech Platform, users can learn courses after purchase subscription (Stripe), If the user is interested he/she can become an Instructor and create a Course of his/her expertise and upload the video to AWS(Cloud).</span>
             <div className={styles.techStack}>
               <span className={styles.stackTitle}>Tech Stack</span>
@@ -37,13 +39,14 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <hr />
         <div className={styles.project}>
-          <div>
+          <div className={styles.ImageHolder}>
           <img src={Uboric} alt="Uboric" />
           </div>
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>Uboric Clone</p>
-            <br />
+            {/* <br /> */}
             <span className={styles.projectContent}>Uboric is an e-commerce platform where users can find different kinds of utility products from various categories. Users can add as many as products cart and place the order.</span>
             <div className={styles.techStack}>
               <span className={styles.stackTitle}>Tech Stack</span>
@@ -67,13 +70,15 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <hr />
+
         <div className={styles.project}>
-          <div>
+          <div className={styles.ImageHolder}>
           <img src={TimeCamp} alt="Time Camp Clone" />
           </div>
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>Time Camp Clone</p>
-            <br />
+            {/* <br /> */}
             <span className={styles.projectContent}>Time camp Clone is a Productivity and Time Management Tool, helps users to know the overall time spent on the project by the members and also specific tasks.</span>
             <div className={styles.techStack}>
               <span className={styles.stackTitle}>Tech Stack</span>
@@ -99,5 +104,6 @@ export default function Projects() {
         </div>
       </div>
     </section>
+    </Element>
   );
 }

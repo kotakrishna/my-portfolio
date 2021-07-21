@@ -21,6 +21,7 @@ export const Header = styled.header`
   font-family: "Apercu", "Times New Roman", Times, serif;
   z-index: 100;
   height: ${(prop) => (prop.state ? "60px" : "100vh")};
+  
 `;
 //   ${(({ scroll }) => !scroll && `height: 100vh`) || `height:80px`};
 
@@ -49,6 +50,15 @@ export const A = styled.a`
 
 export const PersonalImageHolder = styled.div`
     padding-right: 10px;
+`
+
+
+export  const VideoBg = styled.video`
+width: 200%;
+height: 100%;
+-object-fit: cover;
+-o-object-fit:cover;
+background-color: black;
 `
 export const Banner = styled.img`
   position: absolute;
@@ -149,3 +159,32 @@ export const Li = styled.li`
 // export const TextTop = styled.ReactTypingEffect`
 //   display: none;
 // `
+
+
+export const Scroll = styled.a`
+opacity: ${(props) => (props.state ? "0" : "1")};
+height: auto;
+transform:translate(0%, 300px);
+font-size: 15px;
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+`

@@ -16,12 +16,13 @@ import SCSS from "../img/skills/sass-lang-ar21.svg";
 import REDUX from "../img/skills/icons8-redux.svg";
 import "../App.css";
 import SQL from "../img/skills/icons8-mysql-logo-1.svg";
-
+import { Element } from "react-scroll";
 import styles from "../styles/Skills.module.scss";
 
 export default function Skills() {
   let p=Math.round(Math.random())
   return p%2?(
+       <Element name="skills">
     <section id="skills" className={styles.Section}>
          <h5 className={styles.skills}>SKILLS</h5>
        <div>
@@ -96,7 +97,9 @@ export default function Skills() {
          </div>
 
        </div>
-    </section>):(
+    </section>
+    </Element>):(
+         <Element name="skills">
     <section id="skills" className={styles.section}>
       <h5 className={styles.skills}>SKILLS</h5>
       <div className={styles.holder}>
@@ -125,5 +128,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-    )
+    </Element>)
 }

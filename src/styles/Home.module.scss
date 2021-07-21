@@ -7,10 +7,12 @@
   justify-content: space-around;
   padding: 8em 2em;
   margin-bottom: 0%;
+  padding-top: 500px;
   @media (min-width: 768px) {
     padding: 5em;
     font-size: 20px;
     scroll-padding: 64px;
+    padding-top: 500px;
   }
   scroll-snap-align: start;
 }

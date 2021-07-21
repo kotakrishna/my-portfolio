@@ -1,7 +1,8 @@
 .section {
-  height: 40vh;
+  height: 60vh;
   //   border: 1px solid black;
   margin: auto;
+  padding-top: 100px;
   img {
     height: 90px;
     margin: 10px 50px;
@@ -59,6 +60,7 @@
         margin: auto;
         align-items: center;
         place-content: center;
+        padding-top: 10%;
         row-gap: 2rem;
         @media only screen and (max-width: 521px) {
           // .poweredBy {
@@ -98,5 +100,6 @@
           //   width: 40px;s
           text-align: center;
           margin: auto;
+          letter-spacing: 2px;
         }
 }

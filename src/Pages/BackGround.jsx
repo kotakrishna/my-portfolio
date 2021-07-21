@@ -1,17 +1,23 @@
 import React from "react";
 import styles from "../styles/BackGround.module.scss";
+import { Element } from "react-scroll";
 
 export default function BackGround() {
   return (
+    <Element name="background">
     <section className={styles.Section}>
       <div className={styles.title}>BACKGROUND</div>
       <div className={styles.content}>
         <p>
-          I'm currently up-skilling as Full Stack Developer at{" "}
+          {/* I'm currently up-skilling as Full Stack Developer at{" "}
           <span> Masai School </span>
-          building skills for the world with some awesome people. I graduated
+        building skills for the world with some awesome people. */}
+           I graduated
           from <span> St.Martin's Engineering College </span> after completing
           Electrical and Electronics Engineering.
+        </p>
+        <p>
+          During my College life I was involved in NCC as Cadet participated in National and State level events. My fitness enthusiasm lead me to athletics and being a Marathon runner.
         </p>
         <p>
           As a software engineer, I enjoy bridging the gap between engineering
@@ -27,5 +33,6 @@ export default function BackGround() {
         </p>
       </div>
     </section>
+        </Element>
   );
 }

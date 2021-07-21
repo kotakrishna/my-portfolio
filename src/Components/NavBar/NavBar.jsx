@@ -11,6 +11,7 @@ import {
   Body,
   Banner,
   Ul,
+  Scroll,
   // Li,
   Logo,
   Nav,
@@ -28,7 +29,7 @@ import {
 // };
 
 export default function NavBar() {
-  const [controlState, setControlState] = React.useState(false);
+  const [controlState, setControlState] = React.useState(true);
   const controlHeader = () => {
     if (window.scrollY > 0) {
       setControlState(true);
@@ -49,14 +50,14 @@ export default function NavBar() {
     <Main>
       <Body>
         <Header state={controlState}>
-        <ProgressiveImage
+        {/* <ProgressiveImage
             delay={3000}
             src={IMAGE}
             placeholder="tiny-image.jpg"
           >
             {src => <Banner state={controlState} src={src} alt="the handing img" />}
-          </ProgressiveImage>
-          <Banner state={controlState} src={IMAGE} alt="the handing img" />
+          </ProgressiveImage> */}
+          {/* <Banner state={controlState} src={IMAGE} alt="the handing img" /> */}
           <Logo state={controlState}>
            <PersonalImageHolder >
               <PersonalImg
@@ -69,8 +70,8 @@ export default function NavBar() {
               Kota.
               </h3> 
           
+          <Scroll state={controlState} >Scroll Down</Scroll>
           </Logo>
-
         </Header>
       </Body>
     </Main>
