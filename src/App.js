@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* <NavBar /> */}
-      <VideoBackground/>
+      {/* <VideoBackground/> */}
       <Switch>
         <Route path="/">
           <Home />
