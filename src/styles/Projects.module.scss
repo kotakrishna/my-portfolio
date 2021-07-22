@@ -7,13 +7,17 @@
 }
 .title{
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 800;
   color: #18356d;
   margin: 5rem auto;
   letter-spacing: 2px;
+  // height: fit-content;
+  font-family: "Apercu";
+  margin-bottom: 10px;
 }
 .content{
   padding: 1rem;
+  padding-top: -10px;
   display: grid;
   place-content: center;
   // grid-template-columns: repeat(3, 1fr);
@@ -53,7 +57,7 @@
   }
 }
 .projectContent{
-  font-size: 1.5em;
+  font-size: 1.1em;
   // font-weight: 500;
   text-align: left;
   margin: auto;
@@ -90,34 +94,44 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  min-width: 200px;
   text-decoration: none;
   color: #fff !important;
   :hover {
+    cursor: pointer;
     background-color: #fff;
     color: #18356d !important;
   }
   
   span{
+    padding: 2rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    :hover {
+      // background-color: #fff;
+      color: #18356d !important;
+    }
+  }
+  a{
+    // animation: ease-in-out 0.5s;
     color: #fff !important;
     margin-left: 10px;
+    text-decoration: none;
     height: fit-content;
     border-radius: 10px;
     border: #18356d solid 1px;
-    min-width: 50px;
-    padding: 1%;
+    min-width: 100px;
+    padding: .5rem;
     background-color: #18356d;
+    margin-bottom: 10px;
     :hover {
       background-color: #fff;
       color: #18356d !important;
-    }
-    a{
-      color: #fff;
-      text-decoration: none;
-      animation: ease-in-out 0.5s;
-      :hover {
-        background-color: #fff;
-        color: #18356d !important;
-      }
     }
   }
 }

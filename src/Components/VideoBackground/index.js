@@ -1,7 +1,9 @@
 import React from 'react'
 import video from "../../img/Video/video.mp4"
 import { scroller ,Link, Element } from 'react-scroll';
-import { HeroBg, HeroBtnWrapper,HeroP2, HeroContainer, HeroContent, HeroH1, HeroItem, HeroList, HeroP, PersonalImageHolder, PersonalImg, VideoBg } from './VideoElements'
+import Scroll from "../../img/emojis/staticScroll.png"
+
+import { HeroBg, HeroBtnWrapper,HeroP2,ResumeButton,Resume, HeroContainer,ScrollHolder,ScrollImg, HeroContent, HeroH1, HeroItem, HeroList, HeroP, PersonalImageHolder, PersonalImg, VideoBg } from './VideoElements'
 export default function VideoBgTop() {
     const [controlState, setControlState] = React.useState(false);
     const ScrollToTheHome = () => {
@@ -54,9 +56,12 @@ export default function VideoBgTop() {
                 Full Stack Web Developer | Fitness Enthusiast  <br />  Software Engineer | Curiosity Driven Person
             </HeroP>
             <HeroP2 state={controlState}>
-                {/* <Button to="home" > */}
-                    Scroll Down
-                {/* </Button> */}
+                
+                <span> Scroll Down </span>
+                <ScrollHolder>
+                    <ScrollImg src={Scroll} alt="" />
+                </ScrollHolder>
+                
             </HeroP2>
             <HeroList state={controlState}>
                 <HeroItem to="background" state={controlState}>
@@ -72,6 +77,11 @@ export default function VideoBgTop() {
                     Contact
                 </HeroItem>
             </HeroList>
+            <ResumeButton  state={controlState}>
+            <Resume download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</Resume>
+        </ResumeButton>
+            {/* <HeroList>
+            </HeroList> */}
         </HeroContent>
               
 

@@ -20,7 +20,7 @@ import { Element } from "react-scroll";
 import styles from "../styles/Skills.module.scss";
 
 export default function Skills() {
-  let p=Math.round(Math.random())
+  let p=11;
   return p%2?(
        <Element name="skills">
     <section id="skills" className={styles.Section}>

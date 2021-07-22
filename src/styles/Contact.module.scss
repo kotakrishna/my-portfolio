@@ -1,6 +1,5 @@
 .main{
-  height: 300px;
-  
+  height: 300px; 
 }
 
 .Section {
@@ -47,22 +46,37 @@
     // font-size: 120%;
     font-weight: 800;
     font-family: "Apercu";
+    font-size: 2em;
+    padding-bottom: 2rem;
     letter-spacing: 2px;
   }
 
 .content{
     display: flex;
+    flex-wrap: wrap;
     div{
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 800px) {
+          flex-direction: colomn;
+          width: 100vh;
+          text-align: center;
+          margin:auto;
+          margin-bottom: 10%;
+          span{
+            // display: none;
+          }
+        }
     }
     img{
         color: #18356d;
         width: 3em;
         @media (max-width: 800px) {
-            width: auto;
+            width: 2rem;
+            flex-grow: 1;
+
         }
     }
 }

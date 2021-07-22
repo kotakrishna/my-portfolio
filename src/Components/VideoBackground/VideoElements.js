@@ -41,6 +41,7 @@ export const  VideoBg = styled.video`
     object-fit: cover;
     /* min-height: 500px; */
     background: #232a34;
+    opacity: 0.6;
 `
 
 export const HeroContent = styled.div`
@@ -49,6 +50,7 @@ max-width: 1200px;
 position: absolute;
 padding: 8px 24px;
 display: flex;
+transition: 1s;
 flex-direction: column;
 align-items: center;
 `
@@ -60,19 +62,19 @@ export const HeroH1 = styled.h1`
     text-align: center;
      
   transform: ${(props) =>
-    props.state ? "translate(-150%, 120%)" : "translate(-0%, -0%)"};
+    props.state ? "translate(-150%, 5rem)" : "translate(0%, 70%)"};
   font-size: ${(props) => (props.state ? "2em" : "48px")};
   transition: 1s;
     @media screen and (max-width: 768px) {
         font-size: 40px;
             transform: ${(props) =>
-                props.state ? "translate(-10%, 100%)" : "translate(-0%, -0%)"};
+                props.state ? "translate(-10%, 100%)" : "translate(-0%, 3rem)"};
                 }
     @media screen and (max-width: 480px) {
         margin-left: -10%;
         font-size: 25px;
         transform: ${(props) =>
-            props.state ? "translate(-10%, 100%)" : "translate(-0%, -0%)"};
+            props.state ? "translate(-10%, 2.5rem)" : "translate(-5%, 3rem)"};
     }
     `
 export const HeroP = styled.p`
@@ -82,18 +84,22 @@ export const HeroP = styled.p`
     text-align: center;
     opacity: ${(props) => (props.state ? "0" : "1")};
     max-width: 600px;
+    transition: 1s;
+transform: ${(props) =>
+    props.state ? "translate(-10%, 6.5rem)" : "translate(-0%, 50%)"};
     @media screen and (max-width: 768px) {
         font-size: 24px;
         
     }
     @media screen and (max-width: 480px) {
-        margin-left: -10%;
+        margin-left: -15%;
         font-size: 17px;
     }
     
     `
 export const HeroP2 = styled(HeroP)`
-    margin-top: 30px;
+    margin-top: 10%;
+    font-size: 16px;
 `
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
@@ -105,6 +111,7 @@ export const HeroBtnWrapper = styled.div`
 export const PersonalImageHolder = styled.div`
     /* margin-left: -10%; */
     padding-right: 10px;
+    transition: 1s;
     @media screen and (max-width: 768px) {
         /* display: none; */
         margin-left: -10%;
@@ -125,12 +132,12 @@ export const PersonalImg = styled.img`
   /* justify-content: center; */
   transition: 1s;
   opacity: ${(props) => (props.state ? "0.5" : "1")};
-  width: 10em;
-  height: 10em;
+  width: 15em;
+  height: 15em;
   border-radius: 50%;
   transition: 1s;
   transform: ${(props) =>
-    props.state ? "translate(0, 0%)" : "translate(0%, 0%)"};
+    props.state ? "translate(0, 0%)" : "translate(0%, 25%)"};
   /* transform: translate(-50%, -50%); */
   opacity: ${(props) => (props.state ? "0" : "1")};
   `;
@@ -143,7 +150,7 @@ export const HeroList = styled.ul`
     font-size: 24px;
     transition: 1s;
     transform: ${(props) =>
-    props.state ? "translate(40%, -420%)" : "translate(-0%, -0%)"};
+    props.state ? "translate(10%, -11rem)" : "translate(-0%, 10%)"};
     opacity: ${(props) => (props.state ? "1" : "0")};
     display: flex;
     list-style-type: none;
@@ -172,4 +179,32 @@ transform: ${(props) =>
     &.active {
         border-bottom: 3px solid #fff;
     }
+`
+
+export const  ScrollHolder = styled.p`
+    background-color: transparent;
+`
+
+export const ScrollImg = styled.img`
+    background-color: transparent;
+`
+
+export const ResumeButton = styled.button`
+    background-color: white;
+    text-align: center;
+    border:none;
+    transition: 1s;
+    padding:0.7rem;
+    border-radius: 10px;
+    opacity: ${(props) => (props.state ? "1" : "0")};
+    transform: ${(props) =>
+    props.state ? "translate(40rem, -21.5rem)" : "translate(-10%, -0%)"};
+`
+
+export const Resume = styled.a`
+font-size: 15px;
+color: #18356d;
+text-decoration: none;
+transition: 1s;
+opacity: ${(props) => (props.state ? "0" : "1")};
 `

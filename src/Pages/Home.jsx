@@ -30,7 +30,7 @@ export default function Home() {
             <span className={styles.experience}> </span>
           </h3>
         </div>
-        <div>
+        {/* <div>
           <h3 className={styles.touch}>
             Get in touch <span className={styles.touchIcon}></span>{" "}
             <a
@@ -43,15 +43,15 @@ export default function Home() {
               kotakrishna@kotakreddy.com{" "}
             </a>
           </h3>
-        </div>
-        <div className={styles.contacts}>
+        </div> */}
+        {/* <div className={styles.contacts}>
           <p><img src={Git} alt="" /></p>
           <p><img src={Medium} alt="" /></p>
           <p><img src={LinkedIn} alt="" /></p>
-        </div>
-        <div className={styles.ResumeDownload}>
+        </div> */}
+        {/* <div className={styles.ResumeDownload}>
             <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
-        </div>
+        </div> */}
       </section>
       <BackGround />
       <Skills />
