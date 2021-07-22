@@ -164,3 +164,15 @@
      }
    }
  }
+.contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  p{
+    margin:15px 0%;
+    margin-bottom: 25px;
+    img{
+      height: 50px;
+    }
+  }
+}

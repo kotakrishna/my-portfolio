@@ -5,6 +5,7 @@ import LinkedIn from "../img/Projects/LinkedIn-learning.gif"
 import { Element } from "react-scroll";
 import Uboric from "../img/Projects/Uboric.gif"
 import TimeCamp from "../img/Projects/TimeCampClone.gif"
+import HappyFox from "../img/Projects/HappyFox-Clone.gif"
 export default function Projects() {
   return (
     <Element name="projects">
@@ -96,6 +97,36 @@ export default function Projects() {
                 </span>
               <span> 
                 <a href="https://github.com/kotakrishna/unit-3-time-camp-clone" target="_blank">
+                 Git
+                </a>
+                   </span>
+            </div>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <div className={styles.ImageHolder}>
+          <img src={HappyFox} alt="Happy Fox Clone" />
+          </div>
+          <div className={styles.projectDetails}>
+            <p className={styles.projectTitle}>Happy Fox Clone</p>
+            {/* <br /> */}
+            <span className={styles.projectContent}>Static Web Page Built using basic HTML and CSS with limited knowledge on working of other DOM manipulations, was an trial project built with in 4days.</span>
+            <div className={styles.techStack}>
+              <span className={styles.stackTitle}>Tech Stack</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>GIT</span>
+              {/* <span>SCSS</span> */}
+              {/* <span>Stripe</span> */}
+            </div>
+            <div className={styles.projectLinks}>
+              <span>
+                <a href="https://happy-fox-clone.netlify.app/" target="_blank">
+                Website
+                </a>
+                </span>
+              <span> 
+                <a href="https://github.com/kotakrishna/happy-fox-clone" target="_blank">
                  Git
                 </a>
                    </span>

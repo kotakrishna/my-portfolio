@@ -1,3 +1,8 @@
+.main{
+  height: 300px;
+  
+}
+
 .Section {
     display: flex;
     justify-content: center;
@@ -49,10 +54,13 @@
     display: flex;
     div{
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     img{
         color: #18356d;
-        width: 10em;
+        width: 3em;
         @media (max-width: 800px) {
             width: auto;
         }

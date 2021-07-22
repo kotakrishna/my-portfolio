@@ -60,7 +60,7 @@ export const HeroH1 = styled.h1`
     text-align: center;
      
   transform: ${(props) =>
-    props.state ? "translate(-140%, 100%)" : "translate(-0%, -0%)"};
+    props.state ? "translate(-150%, 120%)" : "translate(-0%, -0%)"};
   font-size: ${(props) => (props.state ? "2em" : "48px")};
   transition: 1s;
     @media screen and (max-width: 768px) {

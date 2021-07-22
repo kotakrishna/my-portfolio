@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
 import BackGround from "./BackGround";
+import Git from "../img/logo/github.svg"
+import Medium from "../img/logo/icons8-medium(1).svg"
+import LinkedIn from "../img/logo/linkedin.svg"
 import { Element } from "react-scroll";
 // import TextImage from "../Components/TextImage/TextImage";
 // import nameCard from "../img/personal/GitnMail.svg";
@@ -40,6 +43,11 @@ export default function Home() {
               kotakrishna@kotakreddy.com{" "}
             </a>
           </h3>
+        </div>
+        <div className={styles.contacts}>
+          <p><img src={Git} alt="" /></p>
+          <p><img src={Medium} alt="" /></p>
+          <p><img src={LinkedIn} alt="" /></p>
         </div>
         <div className={styles.ResumeDownload}>
             <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
