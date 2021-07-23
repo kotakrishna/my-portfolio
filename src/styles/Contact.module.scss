@@ -1,5 +1,6 @@
 .main{
   height: 300px; 
+  padding-bottom:150px ;
 }
 
 .Section {
@@ -14,7 +15,6 @@
     transition-duration: 0.6s;
     transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
     transition-delay: 0s;
-    padding-bottom:50px ;
     flex-direction: row;
     // font-size: 3rem;
     @media (max-width: 800px) {
@@ -72,6 +72,7 @@
     }
     img{
         color: #18356d;
+        color: transparent;
         width: 3em;
         @media (max-width: 800px) {
             width: 2rem;

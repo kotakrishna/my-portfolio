@@ -49,9 +49,12 @@ export default function Home() {
           <p><img src={Medium} alt="" /></p>
           <p><img src={LinkedIn} alt="" /></p>
         </div> */}
-        {/* <div className={styles.ResumeDownload}>
-            <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
-        </div> */}
+        <div className={styles.ResumeDownload}>
+          <span>
+        Get to know better <span className={styles.touchIcon}></span>{" "}
+          </span>
+         <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
+        </div>
       </section>
       <BackGround />
       <Skills />

@@ -6,13 +6,13 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     transition: 0.9s;    /* position: relative; */
     position: fixed;
     z-index: 1;
     /* margin-bottom:300px ; */
-    height: ${(prop) => (prop.state ? "60px" : "800px")};
+    height: ${(prop) => (prop.state ? "60px" : "100vh")};
     /* width: ${(prop) => (prop.state ? "60px" : "100vh")}; */
     `
 
@@ -62,7 +62,7 @@ export const HeroH1 = styled.h1`
     text-align: center;
      
   transform: ${(props) =>
-    props.state ? "translate(-150%, 5rem)" : "translate(0%, 70%)"};
+    props.state ? "translate(-150%,140%)" : "translate(0%, 70%)"};
   font-size: ${(props) => (props.state ? "2em" : "48px")};
   transition: 1s;
     @media screen and (max-width: 768px) {
@@ -74,7 +74,7 @@ export const HeroH1 = styled.h1`
         margin-left: -10%;
         font-size: 25px;
         transform: ${(props) =>
-            props.state ? "translate(-10%, 2.5rem)" : "translate(-5%, 3rem)"};
+            props.state ? "translate(-10%, 2rem)" : "translate(-5%, 3rem)"};
     }
     `
 export const HeroP = styled.p`
@@ -150,7 +150,7 @@ export const HeroList = styled.ul`
     font-size: 24px;
     transition: 1s;
     transform: ${(props) =>
-    props.state ? "translate(10%, -11rem)" : "translate(-0%, 10%)"};
+    props.state ? "translate(50%, -12rem)" : "translate(-0%, 10%)"};
     opacity: ${(props) => (props.state ? "1" : "0")};
     display: flex;
     list-style-type: none;

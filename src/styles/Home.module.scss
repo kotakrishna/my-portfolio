@@ -52,9 +52,9 @@
   height: 45px;
   cursor: pointer;
   margin-left: 10px;
-  &:-moz-loading {
+  // &: {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  }
+  // }
   &:hover {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   }
@@ -94,6 +94,33 @@
   }
 }
 
+@keyframes pointing-animation {
+  0% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(-3px);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  60% {
+    transform: translateX(0px);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: translateX(0px)
+  }
+  
+}
 .description {
   margin-top: -20px;
   font-family: "Apercu";
@@ -112,6 +139,7 @@
     height: 50px;
     cursor: pointer;
     margin-left: 10px;
+    
   }
 }
 
@@ -151,11 +179,37 @@
  }
  .ResumeDownload{
    margin-bottom: 0%;
+   font-family: "Apercu";
+  font-size: 1.2em;
+  font-weight: 400;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    .touchIcon{
+      display: none;
+      visibility: hidden;
+    }
+  }
+   .touchIcon {
+     animation-name: pointing-animation;
+    @extend .emojis;
+    background-image: url("../img//emojis/pointright.png");
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  }
    a{
-    font-size: 15px;
+    font-size: 1em;
      border: 1px solid #0e2f56;
-     padding: 2%;
+     padding: 1.5%;
      text-decoration: none;
+     text-align: center;
+    //  font-weight: 800;
      border-radius: 20px;
      background-color: #0e2f56;
      color: white;

@@ -77,9 +77,9 @@ export default function VideoBgTop() {
                     Contact
                 </HeroItem>
             </HeroList>
-            <ResumeButton  state={controlState}>
+            {/* <ResumeButton  state={controlState}>
             <Resume download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</Resume>
-        </ResumeButton>
+        </ResumeButton> */}
             {/* <HeroList>
             </HeroList> */}
         </HeroContent>
