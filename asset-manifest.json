@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b256e3f5.chunk.css",
-    "main.js": "/static/js/main.8459fccf.chunk.js",
-    "main.js.map": "/static/js/main.8459fccf.chunk.js.map",
+    "main.js": "/static/js/main.c9472069.chunk.js",
+    "main.js.map": "/static/js/main.c9472069.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.883df802.js",
     "runtime-main.js.map": "/static/js/runtime-main.883df802.js.map",
     "static/js/2.b032faa2.chunk.js": "/static/js/2.b032faa2.chunk.js",
@@ -20,8 +20,10 @@
     "static/media/expressjs-ar21.493a0dd0.svg": "/static/media/expressjs-ar21.493a0dd0.svg",
     "static/media/github.1dbcf7b2.svg": "/static/media/github.1dbcf7b2.svg",
     "static/media/icons8-css3(1).b0696b45.svg": "/static/media/icons8-css3(1).b0696b45.svg",
+    "static/media/icons8-gmail.e1bc2ceb.svg": "/static/media/icons8-gmail.e1bc2ceb.svg",
     "static/media/icons8-html-5.10080bf9.svg": "/static/media/icons8-html-5.10080bf9.svg",
     "static/media/icons8-javascript.1b2759f5.svg": "/static/media/icons8-javascript.1b2759f5.svg",
+    "static/media/icons8-linkedin(2).ada11cda.svg": "/static/media/icons8-linkedin(2).ada11cda.svg",
     "static/media/icons8-material-ui.1ccf757b.svg": "/static/media/icons8-material-ui.1ccf757b.svg",
     "static/media/icons8-medium(1).8ae7ba07.svg": "/static/media/icons8-medium(1).8ae7ba07.svg",
     "static/media/icons8-mysql-logo-1.e709ed5e.svg": "/static/media/icons8-mysql-logo-1.e709ed5e.svg",
@@ -32,7 +34,6 @@
     "static/media/icons8-redux.7704ea70.svg": "/static/media/icons8-redux.7704ea70.svg",
     "static/media/icons8-typescript.b6a67c48.svg": "/static/media/icons8-typescript.b6a67c48.svg",
     "static/media/linkedin.fe8721c9.svg": "/static/media/linkedin.fe8721c9.svg",
-    "static/media/mail.937a88b6.svg": "/static/media/mail.937a88b6.svg",
     "static/media/mongodb-ar21.b508609b.svg": "/static/media/mongodb-ar21.b508609b.svg",
     "static/media/phone.26887972.svg": "/static/media/phone.26887972.svg",
     "static/media/sass-lang-ar21.4aafceb7.svg": "/static/media/sass-lang-ar21.4aafceb7.svg",
@@ -43,6 +44,6 @@
     "static/js/runtime-main.883df802.js",
     "static/js/2.b032faa2.chunk.js",
     "static/css/main.b256e3f5.chunk.css",
-    "static/js/main.8459fccf.chunk.js"
+    "static/js/main.c9472069.chunk.js"
   ]
 }
