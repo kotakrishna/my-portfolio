@@ -6,6 +6,7 @@ import { Element } from "react-scroll";
 import Uboric from "../img/Projects/Uboric.gif"
 import TimeCamp from "../img/Projects/TimeCampClone.gif"
 import HappyFox from "../img/Projects/HappyFox-Clone.gif"
+import Dijkstra from "../img/Projects/Dijkstra-GIF.gif"
 export default function Projects() {
   return (
     <Element name="projects">
@@ -66,6 +67,38 @@ export default function Projects() {
                 </span>
                 </a>
                 <a href="https://github.com/kotakrishna/Uboric-clone" target="_blank">
+              <span> 
+                 Git
+                   </span>
+                </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className={styles.project}>
+          <div className={styles.ImageHolder}>
+          <img src={Dijkstra} alt="Uboric" />
+          </div>
+          <div className={styles.projectDetails}>
+            <p className={styles.projectTitle}>Shortest Path (Dijkstra)</p>
+            {/* <br /> */}
+            <span className={styles.projectContent}>Dijkstra's Algo is the shortest pathfinding logic used between graphs and nodes.
+ It was conceived by computer scientist Edsger W. Dijkstra in 1956.
+It was build using React for Visual understanding of the algorithm.</span>
+            <div className={styles.techStack}>
+              
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>SCSS</span>
+              {/* <span>Stripe</span> */}
+            </div>
+            <div className={styles.projectLinks}>
+                <a href="https://finding-shortest-path-kotakrishna.vercel.app/" target="_blank">
+              <span> 
+                Website
+                </span>
+                </a>
+                <a href="https://github.com/kotakrishna/dijkstra-pathfinder" target="_blank">
               <span> 
                  Git
                    </span>
