@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/Projects.module.scss";
-import MUI from "../img/skills/icons8-material-ui.svg";
 import LinkedIn from "../img/Projects/LinkedIn-learning.gif"
 import { Element } from "react-scroll";
 import Uboric from "../img/Projects/Uboric.gif"
@@ -30,12 +29,12 @@ export default function Projects() {
               <span>Stripe</span>
             </div>
             <div className={styles.projectLinks}>
-                <a href="https://linkedinlearningclone-kotakrishna.vercel.app/" target="_blank" >
+                <a rel="noreferrer" href="https://linkedinlearningclone-kotakrishna.vercel.app/" target="_blank" >
               <span > 
                  Website
                  </span>
                 </a>
-                 <a href="https://github.com/ashish8796/linkedin-learning-clone" target="_blank">
+                 <a rel="noreferrer" href="https://github.com/ashish8796/linkedin-learning-clone" target="_blank">
               <span>
                  Git
                   </span>
@@ -61,12 +60,12 @@ export default function Projects() {
               {/* <span>Stripe</span> */}
             </div>
             <div className={styles.projectLinks}>
-                <a href="https://kotakrishna.github.io/Uboric-clone/" target="_blank">
+                <a rel="noreferrer" href="https://kotakrishna.github.io/Uboric-clone/" target="_blank">
               <span> 
                 Website
                 </span>
                 </a>
-                <a href="https://github.com/kotakrishna/Uboric-clone" target="_blank">
+                <a rel="noreferrer" href="https://github.com/kotakrishna/Uboric-clone" target="_blank">
               <span> 
                  Git
                    </span>
@@ -93,12 +92,12 @@ It was build using React for Visual understanding of the algorithm.</span>
               {/* <span>Stripe</span> */}
             </div>
             <div className={styles.projectLinks}>
-                <a href="https://finding-shortest-path-kotakrishna.vercel.app/" target="_blank">
+                <a rel="noreferrer" href="https://finding-shortest-path-kotakrishna.vercel.app/" target="_blank">
               <span> 
                 Website
                 </span>
                 </a>
-                <a href="https://github.com/kotakrishna/dijkstra-pathfinder" target="_blank">
+                <a rel="noreferrer" href="https://github.com/kotakrishna/dijkstra-pathfinder" target="_blank">
               <span> 
                  Git
                    </span>
@@ -125,12 +124,12 @@ It was build using React for Visual understanding of the algorithm.</span>
               {/* <span>Stripe</span> */}
             </div>
             <div className={styles.projectLinks}>
-                <a href="https://unit-3-time-camp-clone.vercel.app/" target="_blank">
+                <a rel="noreferrer" href="https://unit-3-time-camp-clone.vercel.app/" target="_blank">
               <span>
                 Website
                 </span>
                 </a>
-                <a href="https://github.com/kotakrishna/unit-3-time-camp-clone" target="_blank">
+                <a rel="noreferrer" href="https://github.com/kotakrishna/unit-3-time-camp-clone" target="_blank">
               <span> 
                  Git
                    </span>
@@ -156,12 +155,12 @@ It was build using React for Visual understanding of the algorithm.</span>
               {/* <span>Stripe</span> */}
             </div>
             <div className={styles.projectLinks}>
-                <a href="https://happy-fox-clone.netlify.app/" target="_blank">
+                <a rel="noreferrer" href="https://happy-fox-clone.netlify.app/" target="_blank">
               <span>
                 Website
                 </span>
                 </a>
-                <a href="https://github.com/kotakrishna/happy-fox-clone" target="_blank">
+                <a rel="noreferrer" href="https://github.com/kotakrishna/happy-fox-clone" target="_blank">
               <span> 
                  Git
                    </span>

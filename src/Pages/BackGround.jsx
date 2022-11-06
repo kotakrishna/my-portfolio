@@ -9,9 +9,6 @@ export default function BackGround() {
       <div className={styles.title}>BACKGROUND</div>
       <div className={styles.content}>
         <p>
-          {/* I'm currently up-skilling as Full Stack Developer at{" "}
-          <span> Masai School </span>
-        building skills for the world with some awesome people. */}
            I graduated
           from <span> St.Martin's Engineering College </span> after completing
           Electrical and Electronics Engineering.

@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import ReactTypingEffect from 'react-typing-effect';
-// import React from "react";
-// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
-
-// const Scroll = window.scrollY > 0 ? "80px" : "100vh";
 
 export const colorType = "#007a8b";
 

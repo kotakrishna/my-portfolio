@@ -1,9 +1,9 @@
 import React from 'react'
 import video from "../../img/Video/video.mp4"
-import { scroller ,Link, Element } from 'react-scroll';
+import { scroller ,Link } from 'react-scroll';
 import Scroll from "../../img/emojis/staticScroll.png"
 
-import { HeroBg, HeroBtnWrapper,HeroP2,ResumeButton,Resume, HeroContainer,ScrollHolder,ScrollImg, HeroContent, HeroH1, HeroItem, HeroList, HeroP, PersonalImageHolder, PersonalImg, VideoBg } from './VideoElements'
+import { HeroBg, HeroP2, HeroContainer,ScrollHolder,ScrollImg, HeroContent, HeroH1, HeroItem, HeroList, HeroP, PersonalImageHolder, PersonalImg, VideoBg } from './VideoElements'
 export default function VideoBgTop() {
     const [controlState, setControlState] = React.useState(false);
     const ScrollToTheHome = () => {

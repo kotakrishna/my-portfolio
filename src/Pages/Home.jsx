@@ -1,12 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
 import BackGround from "./BackGround";
-import Git from "../img/logo/github.svg"
-import Medium from "../img/logo/icons8-medium(1).svg"
-import LinkedIn from "../img/logo/linkedin.svg"
-import { Element } from "react-scroll";
-// import TextImage from "../Components/TextImage/TextImage";
-// import nameCard from "../img/personal/GitnMail.svg";
 import Skills from "./Skills";
 import SmallSkills from "./SmallSkills";
 import Projects from "./Projects";
@@ -15,7 +9,7 @@ export default function Home() {
   return (
     <>
     
-    <section id="home" className={styles.scroll_snap,styles.Section}>
+    <section id="home" className={`${styles.scroll_snap}, ${styles.Section}`}>
         
         <div>
           <h1 className={styles.hey}>

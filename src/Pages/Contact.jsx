@@ -2,11 +2,8 @@ import React from "react";
 import styles from "../styles/Contact.module.scss"
 import Git from "../img/logo/github.svg"
 import Medium from "../img/logo/icons8-medium(1).svg"
-// import LinkedIn from "../img/logo/linkedin.svg"
 import LinkedIn from "../img/logo/icons8-linkedin(2).svg"
 import mail from "../img/logo/icons8-gmail.svg"
-// import mail from "../img/social/mail.svg"
-// import email from "../img/logo/email.svg"
 import phone from "../img/social/phone.svg"
 import { Element } from "react-scroll";
 export default function Contact() {
