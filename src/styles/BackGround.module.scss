@@ -1,16 +1,20 @@
 .Section {
-  display: flex;
+  display: grid;
   justify-content: center;
+  font-size: larger;
   visibility: visible;
-  padding: 100px 170px;
+  padding: 90px 120px;
   opacity: 1;
   margin-top: 0%;
+  place-content: center;
   //   transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;
   transition-property: opacity;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
   transition-delay: 0s;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100vh;
+  margin: auto;
   // font-size: 3rem;
   @media (max-width: 800px) {
     padding: 10px;
@@ -34,15 +38,17 @@
 }
 
 .title {
+  align-items: center;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 200px;
-  margin-right: 70px;
+  // flex-shrink: 0;
+  // width: 200px;
+  // margin-right: 70px;
   color: #18356d;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   //   src: url("../font/apercu/Apercu-Bold.eot");
-
+  font-size: 2rem;
+  margin-bottom: 10px;
   font-weight: 800;
   font-family: "Apercu";
   letter-spacing: 2px;
@@ -59,8 +65,30 @@
     // font-weight: 400;
     // font-size: 1.1rem;
   }
-  @media (max-width: 800px) {
+  // @media (max-width: 800px) {
+  //   width: 40vh;
+
+  //   font-size: 25px;
+  //   // margin: auto;
+  // }
+  // @media screen and (max-width: 992px) {
+  //   body {
+  //     background-color: blue;
+  //   }
+  // }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+}
+
+@media screen and (max-width: 600px) {
+  .Section {
     width: 40vh;
-    // margin: auto;
+    .title{
+      font-size: 1.5rem;
+    }
+
   }
+  // width: 50vh;
+  // font-size: large;
+  
 }

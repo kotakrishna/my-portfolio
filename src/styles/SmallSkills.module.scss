@@ -17,7 +17,9 @@
     }
     .title {
       text-align: center;
+      font-size: 1.5rem;
       padding-left: 2rem;
+      letter-spacing: 2px;
     }
   }
   @media only screen and (min-width: 521px) {
@@ -66,7 +68,7 @@
       margin-top: 20px;
       //   margin-bottom: 5px;
       // font-weight: 400;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
     .subTitle {
       font-size: 1.2em;

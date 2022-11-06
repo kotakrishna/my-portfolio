@@ -16,36 +16,90 @@ import SCSS from "../img/skills/sass-lang-ar21.svg";
 import REDUX from "../img/skills/icons8-redux.svg";
 import "../App.css";
 import SQL from "../img/skills/icons8-mysql-logo-1.svg";
-
+import { Element } from "react-scroll";
 import styles from "../styles/Skills.module.scss";
 
 export default function Skills() {
-  let p=Math.round(Math.random())
+  let p=11;
   return p%2?(
+       <Element name="skills">
     <section id="skills" className={styles.Section}>
          <h5 className={styles.skills}>SKILLS</h5>
        <div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={HTML} alt="HTML" />
+              <span>HTML</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={Css} alt="HTML" />
-              <img src={JS} alt="HTML" />
+              <span>CSS</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img src={JS} alt="HTML" />     
+              <span>Javascript</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>  
+
               <img src={Ty} alt="HTML" />
+              <span>Typescript</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={PY} alt="HTML" />
+              <span>Python</span>
+         </div>
        </div>
-       <div>
+       <div className={styles.middle}>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={Rct} alt="HTML" />
+              <span>React</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={REDUX} alt="" />
+              <span>Redux</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={Njs} alt="HTML" />
+              <span>Next.js</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>      
               <img src={EX} alt="" />
+              <span>Express</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
               <img src={MDB} alt="" />
+              <span>MongoDB</span>
+         </div>
        </div>
        <div>
-       <img src={SCSS} alt="" />
-    <img className={styles.STC} src={STC} alt="" />
-           <img src={MUI} alt="" />
-           <img src={SQL} alt="" />
-           <img src={NPM} alt="" />
+       <div style={{display:"flex",flexDirection:"column"}}>
+              <img src={SCSS} alt="" />
+              <span>SCSS</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img className={styles.STC} src={STC} alt="" />
+              <span>Styled Components</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img src={MUI} alt="" />
+              <span>Material UI</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img src={SQL} alt="" />
+              <span>MySQL</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img src={NPM} alt="" />
+              <span>NPM</span>
+         </div>
+         <div style={{display:"flex",flexDirection:"column"}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/512px-Stripe_Logo%2C_revised_2016.svg.png" alt="" />
+              <span>Stripe</span>
+         </div>
+
        </div>
-    </section>):(
+    </section>
+    </Element>):(
+         <Element name="skills">
     <section id="skills" className={styles.section}>
       <h5 className={styles.skills}>SKILLS</h5>
       <div className={styles.holder}>
@@ -70,8 +124,9 @@ export default function Skills() {
           <img src={EX} alt="" />
           <img src={SQL} alt="" />
           <img src={REDUX} alt="" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/512px-Stripe_Logo%2C_revised_2016.svg.png" alt="" />
         </div>
       </div>
     </section>
-    )
+    </Element>)
 }

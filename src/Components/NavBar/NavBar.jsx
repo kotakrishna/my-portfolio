@@ -1,23 +1,13 @@
 import React from "react";
-import ProgressiveImage from "react-progressive-image";
-import ReactTypingEffect from 'react-typing-effect';
-// import styled from "styled-components";
-
-// import {Sign} from "./Sign"
-// import  {ReactComponent as Sign} from "../../img/logo/signOfDeveloper.svg"
 import {
   Main,
   Header,
   Body,
-  Banner,
-  Ul,
+  Scroll,
   // Li,
   Logo,
-  Nav,
   PersonalImg,
   PersonalImageHolder,
-  LogoText,
-  TextTop,
   // A,
 } from "./NavBarStyles";
 // import Background from "public\background.jpg";
@@ -28,7 +18,7 @@ import {
 // };
 
 export default function NavBar() {
-  const [controlState, setControlState] = React.useState(false);
+  const [controlState, setControlState] = React.useState(true);
   const controlHeader = () => {
     if (window.scrollY > 0) {
       setControlState(true);
@@ -37,7 +27,7 @@ export default function NavBar() {
     }
   };
 
-  const IMAGE = `${process.env.PUBLIC_URL}/background.jpg`;
+  // const IMAGE = `${process.env.PUBLIC_URL}/background.jpg`;
 
   React.useEffect(() => {
     window.addEventListener("scroll", controlHeader);
@@ -49,14 +39,14 @@ export default function NavBar() {
     <Main>
       <Body>
         <Header state={controlState}>
-        <ProgressiveImage
+        {/* <ProgressiveImage
             delay={3000}
             src={IMAGE}
             placeholder="tiny-image.jpg"
           >
             {src => <Banner state={controlState} src={src} alt="the handing img" />}
-          </ProgressiveImage>
-          <Banner state={controlState} src={IMAGE} alt="the handing img" />
+          </ProgressiveImage> */}
+          {/* <Banner state={controlState} src={IMAGE} alt="the handing img" /> */}
           <Logo state={controlState}>
            <PersonalImageHolder >
               <PersonalImg
@@ -69,8 +59,8 @@ export default function NavBar() {
               Kota.
               </h3> 
           
+          <Scroll state={controlState} >Scroll Down</Scroll>
           </Logo>
-
         </Header>
       </Body>
     </Main>

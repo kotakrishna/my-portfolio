@@ -1,9 +1,8 @@
 .section {
-  height: 40vh;
+  height: 60vh;
   //   border: 1px solid black;
   margin: auto;
-  .marquee {
-  }
+  padding-top: 50px;
   img {
     height: 90px;
     margin: 10px 50px;
@@ -61,6 +60,7 @@
         margin: auto;
         align-items: center;
         place-content: center;
+        padding-top: 5%;
         row-gap: 2rem;
         @media only screen and (max-width: 521px) {
           // .poweredBy {
@@ -73,12 +73,17 @@
           place-items: center;
           margin: auto;
           display: flex;
+          span{
+            color: rgb(150, 150, 150);
+            // display: none;
+            // visibility: hidden;
+          }
           img{
             height: 4em;
             margin: 0px 50px; 
           }
         }
-        div:nth-child(3){     
+        .middle{     
           img{
             height: 6em;
             margin: 10px 50px;
@@ -95,5 +100,6 @@
           //   width: 40px;s
           text-align: center;
           margin: auto;
+          letter-spacing: 2px;
         }
 }

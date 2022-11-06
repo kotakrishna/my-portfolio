@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
 import BackGround from "./BackGround";
-// import TextImage from "../Components/TextImage/TextImage";
-// import nameCard from "../img/personal/GitnMail.svg";
 import Skills from "./Skills";
 import SmallSkills from "./SmallSkills";
 import Projects from "./Projects";
@@ -10,7 +8,9 @@ import Contact from "./Contact"
 export default function Home() {
   return (
     <>
-      <section className={styles.scroll_snap,styles.Section}>
+    
+    <section id="home" className={`${styles.scroll_snap}, ${styles.Section}`}>
+        
         <div>
           <h1 className={styles.hey}>
             Hey! <span className={styles.wavingHand}></span>
@@ -24,7 +24,7 @@ export default function Home() {
             <span className={styles.experience}> </span>
           </h3>
         </div>
-        <div>
+        {/* <div>
           <h3 className={styles.touch}>
             Get in touch <span className={styles.touchIcon}></span>{" "}
             <a
@@ -37,9 +37,17 @@ export default function Home() {
               kotakrishna@kotakreddy.com{" "}
             </a>
           </h3>
-        </div>
+        </div> */}
+        {/* <div className={styles.contacts}>
+          <p><img src={Git} alt="" /></p>
+          <p><img src={Medium} alt="" /></p>
+          <p><img src={LinkedIn} alt="" /></p>
+        </div> */}
         <div className={styles.ResumeDownload}>
-            <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
+          <span>
+        Get to know better <span className={styles.touchIcon}></span>{" "}
+          </span>
+         <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
         </div>
       </section>
       <BackGround />
@@ -58,6 +66,6 @@ export default function Home() {
         <img width="320px" src={nameCard} alt="the name card" />
       </div> */}
       {/* <TextImage /> */}
-    </>
+      </>
   );
 }
