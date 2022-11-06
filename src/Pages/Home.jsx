@@ -17,37 +17,19 @@ export default function Home() {
           </h1>
         </div>
         <div>
-          <h3 className={styles.description}>
-            I'm <span className={styles.Name}> Kota Sai Krishna Reddy</span>, a
-            Full-Stack Web Developer focused on creating wonderful user
-            experience
+          <p className={styles.description}>
+            I'm <span className={styles.Name}>Kota Sai Krishna Reddy</span>, a
+            Full-Stack Web Developer, with 5+ years of hands-on experience designing,
+            developing, and implementing applications and solutions using varies technologies
+            and programming languages.
             <span className={styles.experience}> </span>
-          </h3>
+          </p>
         </div>
-        {/* <div>
-          <h3 className={styles.touch}>
-            Get in touch <span className={styles.touchIcon}></span>{" "}
-            <a
-              href="mailto:k.saikrishna78@gmail.com"
-              rel="noreferrer"
-              className={styles.link}
-              target="_blank"
-              // style={{ color: "white" }}
-            >
-              kotakrishna@kotakreddy.com{" "}
-            </a>
-          </h3>
-        </div> */}
-        {/* <div className={styles.contacts}>
-          <p><img src={Git} alt="" /></p>
-          <p><img src={Medium} alt="" /></p>
-          <p><img src={LinkedIn} alt="" /></p>
-        </div> */}
         <div className={styles.ResumeDownload}>
           <span>
         Get to know better <span className={styles.touchIcon}></span>{" "}
           </span>
-         <a download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
+         <a attributes-list download="Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf" href={`${process.env.PUBLIC_URL}/Resume-FullStack Web Developer(Kota Sai Krishna Reddy).pdf`}>Download Resume</a>
         </div>
       </section>
       <BackGround />
