@@ -22,9 +22,13 @@
   // background-color: #0e2f56;
 }
 .news {
-  animation: slide 15s linear infinite;
+  animation: slide 20s linear infinite;
   background-color: #ffffff;
   width: max-content;
+
+  :hover{
+    animation: none;
+  }
 }
 .STC {
   background-color: rgb(201, 201, 201);
@@ -42,17 +46,13 @@
 
 @keyframes slide {
     100% {
-        transform: translatex(-40%);
+        transform: translatex(-60%);
       }
     
       0% {
-          transform: translatex(10%);
+          transform: translatex(30%);
         }
       }
-      
-      
-      
-      
       
       .Section{
         display: grid;

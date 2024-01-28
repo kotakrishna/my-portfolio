@@ -1,6 +1,5 @@
 .main{
-  height: 300px; 
-  padding-bottom:150px ;
+  padding-bottom:50px ;
 }
 
 .Section {
@@ -61,7 +60,7 @@
         align-items: center;
         @media (max-width: 800px) {
           flex-direction: colomn;
-          width: 100vh;
+          width: 40%;
           text-align: center;
           margin:auto;
           margin-bottom: 10%;

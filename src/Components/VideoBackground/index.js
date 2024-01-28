@@ -4,19 +4,19 @@ import { scroller, Link } from "react-scroll";
 import Scroll from "../../img/emojis/staticScroll.png";
 
 import {
-    HeroBg,
-    HeroP2,
-    HeroContainer,
-    ScrollHolder,
-    ScrollImg,
-    HeroContent,
-    HeroH1,
-    HeroItem,
-    HeroList,
-    HeroP,
-    PersonalImageHolder,
-    PersonalImg,
-    VideoBg,
+  HeroBg,
+  HeroP2,
+  HeroContainer,
+  ScrollHolder,
+  ScrollImg,
+  HeroContent,
+  HeroH1,
+  HeroItem,
+  HeroList,
+  HeroP,
+  PersonalImageHolder,
+  PersonalImg,
+  VideoBg,
 } from "./VideoElements";
 export default function VideoBgTop() {
   const [controlState, setControlState] = React.useState(false);

@@ -31,10 +31,10 @@ html {
 
 @keyframes slide {
   0% {
-    transform: translatex(0%);
+    transform: translatex(-50%);
   }
 
   100% {
-    transform: translatex(100%);
+    transform: translatex(200%);
   }
 }

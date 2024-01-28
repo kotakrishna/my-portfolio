@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/SmallSkills.module.scss";
 export default function SmallSkills() {
   return (
@@ -12,34 +11,37 @@ export default function SmallSkills() {
 
           <p> JavaScript (ES6)</p>
           <p>TypeScript</p>
-          <p>HTML</p>
-          <p>CSS/Sass</p>
+          {/* <p>HTML</p> */}
+          <p>Sass</p>
           <p>Python</p>
+          <p>Ruby</p>
           <p>SQL</p>
         </div>
         <div className={styles.sub}>
           <p className={styles.subTitle}>FRAMEWORKS</p>
-          <p>Node Js</p>
+          {/* <p>Node Js</p> */}
           <p>React Js</p>
+          <p>Angular</p>
           <p>Next Js</p>
+          <p>Express</p>
+          <p>Django</p>
+          <p>Ruby on Rails</p>
           {/* <p>Material UI</p> */}
         </div>
         <div className={styles.sub}>
           <p className={styles.subTitle}>TOOLS</p>
-
           <p>Bash</p>
           <p>Git & Github</p>
-          <p>Redux</p>
-          <p>React Router Dom</p>
-          <p>Chrome DevTools</p>
-          <p>Postman</p>
-          <p>MongoDB</p>
-          <p>npm</p>
+          <p>Redux-Toolkit</p>
+          <p>Jira</p>
+          <p>Trello</p>
+          <p>Notion</p>
         </div>
         <div className={styles.sub}>
           <p className={styles.subTitle}>TESTING</p>
           <p>Jest</p>
           <p>Cypress</p>
+          <p>Playwright</p>
         </div>
       </div>
     </section>
