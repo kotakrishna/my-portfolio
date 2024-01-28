@@ -55,7 +55,7 @@ export default function VideoBgTop() {
         <PersonalImageHolder>
           <PersonalImg
             state={controlState}
-            src={process.env.PUBLIC_URL + "/Me.jpg"}
+            src={process.env.PUBLIC_URL + "/Me1.jpg"}
             alt=""
           />
         </PersonalImageHolder>
